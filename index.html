@@ -3,79 +3,76 @@
     <haed>
         <title>cheickpoint HTML</title>
         <meta charset="UTF-8" />
-        <link rel="icon" href="" type="">
-        
-
+        <link rel="stylesheet" href="style.css" type="">
+        <!--la police roboto via line google-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     </haed>
     <body>
-        <header style="text-align: center;">
-            <p>
-                Eureka Group
-            </p>
+        <header class="header"  id="backgroundimg"><!--ce header contient logo  la structure le son de bienvenu -->
+            <!--logo entreprise et son de bienvenue-->
+            <img src="white1.jpg" alt="white" height="150" width="250"> 
+            <form class="langue">
+                <label for="langue">Langue:</label>
+                <select id="langue" name="langue">
+                  <option value="fr">Français</option>
+                  <option value="en">Anglais</option>
+                  <option value="es">Espagnol</option>
+                  <option value="de">Allemand</option>
+                </select>
+              </form>
+            
             <br/>
-            <img src="white.jpg" alt="white" height="300" width="500"> 
-            <br/>
-            <audio controls>
+            <audio class="audio" controls>
                 <source src="Rue.m4a" type="audio/mpeg"> 
             </audio>
         </header>
-      <nav style="text-align: center;">
+        <!--barre de navigation dans une liste ordonée-->
+      <nav class="nav">
         <ul style="list-style-type:none;">
-            <li> <a href="">accueil</a></li>
-            <li> <a href="">job </a></li>
-            <li> <a href="">a propos</a></li>
-            <li> <a href="">contact</a></li>
+            <li> <a href="">ACCUEIL</a></li>
+            <li> <a href="">NOS DOMAINES </a></li>
+            <li> <a href="">NOS REALISATION</a></li>
+            <li> <a href="">ACTUALITES</a></li>
+            <li> 
+                <form  action="/recherche" method="get"> 
+                    <input type="text" name="q" style="font-family: 'Roboto', sans-serif;"placeholder="Rechercher..."> <!--barre de recherche-->
+                    <button style="font-family: 'Roboto', sans-serif;"  type="submit"> Rechercher</button> </form> 
+            </li> 
             
         </ul>
     </nav>
-      <section style="text-align: center;">
-        <p>
-            vous
-        </p>
-         <table align="center" border="3" width="700" >
-            <tr>
-                <th colspan="2"><h3>cela vous interesse ?</h3> </th>
-            </tr>
-            <tr>
-                <td width="350">
+    
+      <section class="section1 "style="text-align: center;"> <!--cette section contient 1 tableau--> 
+         <table class="table1" align="center" border="" width="700" ><!--tableau de 1 ligne 2colonnes-->
+            <tr><!--premiere ligne-->
+                <td width="300"><!--colonne 1 qui contient une brievre presentation de la structure-->
                     <i>le but de ce cheickpoint est de pouvoir utiliser les balises du coup je ne dirai rien de plus desole .</i>
                 </td>
-                 <td> <h4>vous postulez ?</h4>
-                    <br/>
-                   <form>
+                 <td><!--colonne 2 qui contient le formulaire-->
+                   <form class="form1"><!--formulaire d'inscription-->
                     <label for="nom">Nom :</label>
                     <input type="text" id="nom" name="nom">
-                     <br>
                       <label for="prenom">Prenom :</label>
                       <input type="text" id="prenom" name="prenom">
-                      <br>
                       <label for="email ">E-mail :</label>
                       <input type="email" id="email" name="email">
-                      <br>
                       <label for="date_de_naissance">Date de naissance :</label>
                       <input type ="date" id="date_de_naissance" name="date_de_naissance">
-                      <br>
                       <label for="description">Décrivez-vous :</label>
-                      <textarea id="description" name="description"></textarea>
-                      <br>
+                      <textarea id="description" name="description" rows="5"></textarea>
                       <label for="pdf">votre cv:</label> 
                       <input type="file" id="pdf" name="pdf" accept="application/pdf">
-                      <br>
                       <input type="submit" value="Envoyer">
                     </form>
-                    
+                <!--formulaire pour postuler -->   
                  </td>
             </tr>
          </table>
-      </section>
+      </section><!--cette section contient 1 tableau  --> 
       <section style="text-align: center;">
-        <p>
-            nous
-        </p>
-         <table align="center" border="3" width="700" >
-            <tr>
-                <th colspan="2"><h3>qui sommes nous ?</h3></th>
-            </tr>
+         <table align="center" border="" width="700" ><!--ce tableau contient 1 ligne et 2 colonne-->
             <tr>
                 <td width="350"> <h3>a propos</h3>
                     <br/>
@@ -90,5 +87,9 @@
             </tr>
          </table>
       </section>
-      <footer style="text-align: center;">developpeur Loic Mehdy KONAN copyright - mai 2023 Abidjan Cote d'Ivoire</footer>
+      <footer style="text-align: center;">
+        <marquee>
+            developpeur Loic Mehdy KONAN copyright - mai 2023 Abidjan Cote d'Ivoire
+        </marquee>
+    </footer>
     </body>
