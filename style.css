@@ -95,32 +95,49 @@ nav button[type="submit"]:hover {
   background-color:rgb(134, 214, 14);
 }
 /******************************************************************************************/
+
 /*la premiere section*/
-.section1 p {
+
+.section1 h3,p{
   font-family: 'Roboto', sans-serif;
-  background-color:greenyellow;
-  width: 1000px;
-  display:inline-block;
 }
 /*le tableau de la premiere section*/
 .table1 {
+  border: none;
+}
+/*la deuxieme section*/
+.section h1{
   font-family: 'Roboto', sans-serif;
-  background-color:greenyellow;
+}
+/*le tableau de la deuxieme section*/
+.table2{
+  border: none;
+  height: 300px;
+}
+/*la troisieme section*/
+.section3 p {
+  font-family: 'Roboto', sans-serif;
+  background-color:rgb(158, 154, 154);
+  width: 1000px;
+  display:inline-block;
+}
+/*le tableau de la troisieme section*/
+.table3 {
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  background-color:gainsboro;
 }
 /*mon formulaire*/
 .form1 {
-  max-width: 300px;
-  margin: 0 auto;
+  max-width:200px;
+  margin:  auto;
   font-family:'Roboto', sans-serif; ;
 }
 
 /*les champs du formulaire*/
 .form1 label {
   display:flex;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-top: 5px;
-  padding-right:  5px;
+  
 }
 /*les champs de saisie*/
 .form1 input[type="text"],
@@ -128,7 +145,7 @@ input[type="email"],input[type="date"],input[type="file"],
 textarea {
   width:300px;
   height:10px;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-bottom: 15px;
@@ -145,4 +162,20 @@ textarea {
 /*lorsque le curseur survol le bouton d'envoi*/
 .form1 input[type="submit"]:hover {
   background-color: #45a049;
+}
+/*notre quatrieme section*/
+.section4 {
+  font-family: 'Roboto', sans-serif;
+}
+/*le tableau de notre quatrieme section*/
+.table4{
+  border: none;
+}
+/*les likes*/
+td.like {
+  cursor: pointer;
+}
+/*notre footer*/
+.marquee{
+  font-family: 'Roboto', sans-serif;
 }
